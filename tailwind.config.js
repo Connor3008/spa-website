@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./src/**/*.html",
+    "./docs/**/*.html",
     "./dist/**/*.html",
     "./*.html", // Ensure root-level HTML files are included
   ],
