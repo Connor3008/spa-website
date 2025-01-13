@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After - Impressions Aesthetics & Laser</title>
+  <link href="../dist/output.css" rel="stylesheet"> <!-- TailwindCSS -->
+  <style>
+    .hover-zoom:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery-title {
+      background: linear-gradient(to right, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gallery-border {
+      border: 2px solid rgba(59, 130, 246, 0.4);
+    }
+    .gradient-bg {
+      background: linear-gradient(to bottom, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-yellow-900">
+  <!-- Header -->
+  <header class="bg-primary text-yellow-900 fixed w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold hover:text-gray-200 transition duration-300">
+        Impressions Aesthetics & Laser
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-gray-200 transition duration-300">Home</a>
+        <a href="about.html" class="hover:text-gray-200 transition duration-300">About Us</a>
+        <a href="index.html#services" class="hover:text-gray-200 transition duration-300">Services</a>
+        <a href="before-after.html" class="hover:text-gray-200 transition duration-300">Before & After</a>
+        <a href="reviews.html" class="hover:text-gray-200 transition duration-300">Reviews</a>
+        <a href="contact.html" class="hover:text-gray-200 transition duration-300">Contact</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden text-xl text-black">&#9776;</button>
+      <div id="mobileMenu" class="hidden md:hidden bg-primary text-white">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a>
+        <a href="index.html#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+        <a href="before-after.html" class="block px-4 py-2 hover:bg-gray-700">Before & After</a>
+        <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-700">Reviews</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container mx-auto px-4 py-8 space-y-12">
+    <section class="text-center mt-12">
+        <h2 class="text-3xl font-bold mb-6 text-primary">Photo Gallery</h2>
+        <p class="text-lg leading-relaxed text-yellow-900 max-w-3xl mx-auto mb-6">
+          See the transformative results of our treatments. These before and after photos showcase the effectiveness of our services, from Laser Hair Removal to Skin Resurfacing.
+        </p>
+      </section>
+      
+    <!-- Gallery -->
+    
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/chest.jpg.png" alt="Before & After 1" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/tight.jpg.png" alt="Before & After 2" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/tight2.jpg.png" alt="Before & After 3" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo1.png" alt="Before & After 1" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo2.png" alt="Before & After 2" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo3.png" alt="Before & After 3" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo4.png" alt="Before & After 4" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo5.png" alt="Before & After 5" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo6.png" alt="Before & After 6" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo7.png" alt="Before & After 7" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo8.png" alt="Before & After 8" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo9.png" alt="Before & After 9" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo10.png" alt="Before & After 10" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo11.png" alt="Before & After 11" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo12.png" alt="Before & After 12" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo13.png" alt="Before & After 13" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo14.png" alt="Before & After 14" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo15.png" alt="Before & After 15" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo16.png" alt="Before & After 16" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo17.png" alt="Before & After 17" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo18.png" alt="Before & After 18" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo19.png" alt="Before & After 19" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo20.png" alt="Before & After 20" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Skin Resurfacing</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo21.png" alt="Before & After 21" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Hydro Facial</p>
+        </div>
+        <div class="hover-zoom gallery-border gradient-bg rounded-lg shadow-lg">
+          <img src="/src/images/photo22.png" alt="Before & After 22" class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <p class="text-center mt-2 text-yellow-900">Laser Hair Removal</p>
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 text-center">
+    <p>&copy; 2025 Impressions Med Spa & Laser. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressions Aesthetics & Laser</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white text-black fixed w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold text-yellow-900 hover:text-yellow-950 transition duration-300">
+        Impressions Aesthetics & Laser
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-yellow-950 transition duration-300 text-yellow-900">Home</a>
+        <a href="about.html" class="hover:text-yellow-950 transition duration-300 text-yellow-900">About</a>
+        <a href="#services" class="hover:text-yellow-950 transition duration-300 text-yellow-900">Services</a>
+        <a href="before-after.html" class="hover:text-yellow-950 transition duration-300 text-yellow-900">Before & After</a>
+        <a href="reviews.html" class="hover:text-yellow-950 transition duration-300 text-yellow-900">Reviews</a>
+        <a href="contact.html" class="hover:text-yellow-950 transition duration-300 text-yellow-900">Contact</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden text-xl text-black">&#9776;</button>
+      <div id="mobileMenu" class="hidden md:hidden bg-primary text-white">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+        <a href="before-after.html" class="block px-4 py-2 hover:bg-gray-700">Before & After</a>
+        <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-700">Reviews</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+  
+  
+
+  <main class="pt-20">
+    <!-- Hero and About Us Wrapper -->
+    <section class="relative h-[71.9vh]">
+      <!-- Background Image -->
+      <div 
+        class="absolute inset-0 bg-cover" 
+        style="background-image: url('/src/images/background.PNG'); background-position: center 30%; background-size: 100%; background-repeat: no-repeat; transform: scale(1);"
+      </div>
+    
+      <!-- Hero Section -->
+      <div class="relative z-10 pt-56 text-center text-white">
+        <h2 class="text-4xl font-bold animate-fade-in">Exceptional Medical Aesthetic Results</h2>
+        <p class="text-xl mt-4">Transformative experiences from start to finish</p>
+        <a href="https://impressionsaestheticsandlaser.com/" target="_blank">
+          <button class="mt-6 px-6 py-2 bg-amber-400 text-black rounded-lg hover:bg-amber-500 transition transform hover:scale-105">
+            Book Now
+          </button>
+        </a>
+      </div>
+    </section>
+    
+    
+    
+
+
+    <!-- Services Section -->
+<section id="services" class=" py-12" style="background-color: rgba(204, 167, 112);">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6 text-yellow-900">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Laser Hair Removal -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Laser Hair Removal</h3>
+        <p>Safe and effective solutions for long-lasting hair reduction using advanced laser technology.</p>
+        <a href="laser-hair-removal.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Hydro Facial -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Hydro Facial</h3>
+        <p>Rejuvenating facials tailored to your skin type, promoting a glowing and youthful appearance.</p>
+        <a href="hydro-facial.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Skin Resurfacing -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Skin Resurfacing</h3>
+        <p>Transform your skin's texture and tone with advanced resurfacing treatments for a radiant look.</p>
+        <a href="skin-resurfacing.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Chemical Peels -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Chemical Peels</h3>
+        <p>Exfoliate and rejuvenate your skin with our customized chemical peel treatments.</p>
+        <a href="chemical-peels.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- RF Microneedling -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">RF Microneedling</h3>
+        <p>Stimulate collagen production and improve skin texture with our advanced microneedling services.</p>
+        <a href="microneedling.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- PRP Therapy -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">PRP Therapy</h3>
+        <p>Rejuvenate your skin and stimulate natural healing with Platelet-Rich Plasma (PRP) Therapy.</p>
+        <a href="prp-therapy.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- IPL Therapy -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">IPL Therapy</h3>
+        <p>
+          Effectively reduce sun damage, age spots, spider veins, and rosacea. Ideal for rejuvenating skin and revising acne scars.
+        </p>
+        <a href="ipl-therapy.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Fractional Laser Resurfacing -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Fractional Laser Resurfacing</h3>
+        <p>
+          The gold standard for anti-aging, this treatment removes damaged skin and stimulates collagen to improve texture and reduce wrinkles.
+        </p>
+        <a href="fractional-laser.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Body Contouring -->
+      <div class="bg-white text-yellow-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+        <h3 class="text-2xl font-bold mb-4 text-accent">Body Contouring</h3>
+        <p>
+          Enhance your appearance with our comprehensive treatments, including body contouring, skin tightening, and cellulite reduction.
+        </p>
+        <a href="body-contouring.html" style="background-color: rgba(204, 167, 112);" class="mt-4 inline-block  text-black px-4 py-2 rounded hover:bg-amber-400 transition border border-stone-800">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: rgba(204, 167, 112);" class="py-12 container mx-auto px-4 rounded-lg shadow-lg">
+      <h2 class="text-4xl font-extrabold text-yellow-900 text-center mb-8">Get in Touch</h2>
+      <p class="text-lg text-yellow-900 text-center max-w-2xl mx-auto mb-6">
+        Have questions or want to learn more about our services? Fill out the form below, and we'll get back to you as soon as possible.
+      </p>
+      <form class="max-w-lg mx-auto space-y-6 bg-white p-8 rounded-lg shadow-md" action="https://impressionsaestheticsandlaser.com/" method="post">
+        <div>
+          <label for="name" class="block text-lg font-semibold text-yellow-900 mb-2">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-accent focus:outline-none" required>
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-semibold text-yellow-900 mb-2">Your Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-accent focus:outline-none" required>
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-semibold text-yellow-900 mb-2">Your Message</label>
+          <textarea name="message" id="message" placeholder="Type your message here" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-accent focus:outline-none" rows="5" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class=" w-full md:w-auto px-8 py-3 bg-accent text-black text-lg font-bold rounded-lg hover:bg-amber-400 transition transform hover:scale-105 shadow-lg">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 text-center">
+    <p>&copy; 2025 Impressions Aesthetics & Laser. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

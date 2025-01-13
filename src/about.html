@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Impressions Med Spa & Laser</title>
+  <link href="../dist/output.css" rel="stylesheet"> <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-yellow-900">
+  <!-- Header -->
+  <header class="bg-primary text-yellow-900 fixed w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold hover:text-gray-200 transition duration-300">
+        Impressions Aesthetics & Laser
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-gray-200 transition duration-300">Home</a>
+        <a href="about.html" class="hover:text-gray-200 transition duration-300">About Us</a>
+        <a href="index.html#services" class="hover:text-gray-200 transition duration-300">Services</a>
+        <a href="before-after.html" class="hover:text-gray-200 transition duration-300">Before & After</a>
+        <a href="reviews.html" class="hover:text-gray-200 transition duration-300">Reviews</a>
+        <a href="contact.html" class="hover:text-gray-200 transition duration-300">Contact</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden text-xl text-yellow-900">&#9776;</button>
+      <div id="mobileMenu" class="hidden md:hidden bg-primary text-yellow-900">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="index.html#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+        <a href="before-after.html" class="block px-4 py-2 hover:bg-gray-700">Before & After</a>
+        <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-700">Reviews</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20 text-yellow-900">
+    <!-- Mission Statement Section -->
+    <section class="bg-blue-50 py-12 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-yellow-900">Our Mission</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+        At Impressions Med Spa & Laser, our mission is to provide cutting-edge aesthetic treatments with a personalized touch, helping our clients achieve their beauty goals in a supportive and welcoming environment. We strive to enhance confidence and well-being through innovative procedures and exceptional care.
+      </p>
+    </section>
+
+    <!-- Team Section -->
+    <section>
+      <h2 class="text-3xl font-bold text-center mb-6 text-yellow-900">Meet Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Dr. David C. Best -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="/src/images/best.jpg.png" alt="Dr. David C. Best" class="rounded-full w-32 h-32 mx-auto mb-4">
+          <h3 class="text-2xl font-bold text-center text-yellow-900">Dr. David C. Best</h3>
+          <p class="text-center italic mb-4">Medical Director</p>
+          <p class="leading-relaxed">
+            Dr. David C. Best, M.D., is one of the country’s most prominent and well-respected plastic and reconstructive surgeons. He established a successful private practice in Greensboro, North Carolina, and is board-certified by the American Board of Plastic Surgery.
+          </p>
+          <p class="leading-relaxed mt-3">
+            Dr. Best's mission is to provide his patients with unique, personalized care, helping them achieve their best impression. With numerous accolades and media features, including in Cosmopolitan, Elle, and Vogue, Dr. Best brings unparalleled expertise and passion to every patient interaction.
+          </p>
+        </div>
+
+        <!-- Lynn Dailey Hege -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="/src/images/lynn.jpg.png" alt="Lynn Dailey Hege" class="rounded-full w-32 h-32 mx-auto mb-4">
+          <h3 class="text-2xl font-bold text-center text-yellow-900">Lynn Dailey Hege</h3>
+          <p class="text-center italic mb-4">Medical Aesthetician & Laser Technician</p>
+          <p class="leading-relaxed">
+            Lynn Hege is a highly experienced Medical Aesthetician and Laser Technician with two decades of expertise. She is skilled in a variety of advanced laser technologies and aesthetic procedures, bringing a unique blend of technical skill and artistic vision.
+          </p>
+          <p class="leading-relaxed mt-3">
+            Lynn is committed to individualized care and works closely with patients to address their unique skin concerns, helping them achieve their goals through state-of-the-art techniques and compassionate attention.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-yellow-900 py-4 text-center">
+    <p>&copy; 2025 Impressions Med Spa & Laser. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

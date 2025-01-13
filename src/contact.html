@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Impressions Aesthetics & Laser</title>
+  <link href="../dist/output.css" rel="stylesheet"> <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-yellow-900">
+  <!-- Header -->
+  <header class="bg-white text-yellow-900 fixed w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold hover:text-yellow-900 transition duration-300">
+        Impressions Aesthetics & Laser
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-yellow-900 transition duration-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-900 transition duration-300">About</a>
+        <a href="index.html#services" class="hover:text-yellow-900 transition duration-300">Services</a>
+        <a href="before-after.html" class="hover:text-yellow-900 transition duration-300">Before & After</a>
+        <a href="reviews.html" class="hover:text-yellow-900 transition duration-300">Reviews</a>
+        <a href="contact.html" class="hover:text-yellow-900 transition duration-300">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuToggle" class="md:hidden text-xl text-white">&#9776;</button>
+
+      <!-- Mobile Navigation -->
+      <div id="mobileMenu" class="hidden md:hidden bg-black text-white absolute top-full right-0 w-full shadow-lg">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="index.html#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+        <a href="before-after.html" class="block px-4 py-2 hover:bg-gray-700">Before & After</a>
+        <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-700">Reviews</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Contact and Hours Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start px-4 py-12">
+      <!-- Contact Form -->
+      <div class="bg-blue-50 p-6 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center text-primary">Drop Us a Line!</h2>
+        <form class="space-y-4" action="https://formsubmit.co/your-email@example.com" method="POST" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary" required>
+          <input type="email" name="email" placeholder="Your Email*" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary" required>
+          <input type="tel" name="phone" placeholder="Your Phone" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary">
+          <textarea name="message" placeholder="Other Notes" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary"></textarea>
+          <input type="file" name="attachments" class="w-full text-yellow-900 px-4 py-2 bg-gray-100 border rounded-lg" multiple>
+          <div class="flex items-center">
+            <input type="checkbox" name="email_list" id="email_list" class="mr-2">
+            <label for="email_list" class="text-yellow-900">Sign up for our email list for updates, promotions, and more.</label>
+          </div>
+          <button type="submit" class="w-full px-6 py-2 bg-black text-white rounded-lg hover:bg-teal-600 transition transform hover:scale-105">
+            Send
+          </button>
+        </form>
+      </div>
+
+      <!-- Hours -->
+      <div class="bg-blue-50 p-8 rounded-lg shadow-lg">
+        <h2 class="text-4xl font-bold text-center text-primary mb-8">Hours</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg">
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Monday:</p>
+            <p>11:00 am – 06:00 pm</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Tuesday:</p>
+            <p>11:00 am – 06:00 pm</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Wednesday:</p>
+            <p>By Appointment</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Thursday:</p>
+            <p>11:00 am – 06:00 pm</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Friday:</p>
+            <p>11:00 am – 05:00 pm</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Saturday:</p>
+            <p>Closed</p>
+          </div>
+          <div class="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm">
+            <p class="font-semibold">Sunday:</p>
+            <p>Closed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="flex flex-col items-center text-center space-y-6 px-4">
+      <h2 class="text-3xl font-bold text-primary">Better Yet, See Us in Person!</h2>
+      <p class="text-lg text-yellow-900 max-w-2xl">
+        We love our customers, so feel free to reach out by phone, text, email, Facebook, or our contact form. We can't wait to hear from you!
+      </p>
+      <div class="text-yellow-900 space-y-2">
+        <p class="font-semibold text-xl">Impressions Aesthetics & Laser</p>
+        <p>1107 New Pointe Boulevard, Leland, North Carolina 28451, United States</p>
+        <p>Phone: <a href="tel:9108992944" class="text-primary underline">910-899-2944</a></p>
+        <p>Email: <a href="mailto:impressionsaestheticsandlaser@gmail.com" class="text-primary underline">impressionsaestheticsandlaser@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-yellow-900 py-4 text-center">
+    <p>&copy; 2025 Impressions Aesthetics & Laser. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>

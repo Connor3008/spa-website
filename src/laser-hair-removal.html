@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laser Hair Removal</title>
+  <link rel="stylesheet" href="../dist/output.css"> <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white text-black fixed w-full top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold hover:text-gray-200 transition duration-300">
+        Impressions Aesthetics & Laser
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="index.html" class="hover:text-gray-200 transition duration-300">Home</a>
+        <a href="about.html" class="hover:text-gray-200 transition duration-300">About</a>
+        <a href="index.html#services" class="hover:text-gray-200 transition duration-300">Services</a>
+        <a href="before-after.html" class="hover:text-gray-200 transition duration-300">Before & After</a>
+        <a href="reviews.html" class="hover:text-gray-200 transition duration-300">Reviews</a>
+        <a href="contact.html" class="hover:text-gray-200 transition duration-300">Contact</a>
+      </nav>
+      <button id="menuToggle" class="md:hidden text-xl text-black">&#9776;</button>
+      <div id="mobileMenu" class="hidden md:hidden bg-primary text-white">
+        <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+        <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+        <a href="index.html#services" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+        <a href="before-after.html" class="block px-4 py-2 hover:bg-gray-700">Before & After</a>
+        <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-700">Reviews</a>
+        <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Service Overview -->
+    <section class="container mx-auto px-4 py-8 space-y-12">
+      <div class="flex flex-col items-center space-y-8">
+        <img src="/src/images/resurfacing.jpg" alt="Laser Hair Removal" class="rounded-lg shadow-lg w-1/2 max-w-sm">
+        <h2 class="text-5xl font-bold text-blue-500 text-center">
+          Safe and Effective Hair Reduction
+        </h2>
+        <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-3xl">
+          <p class="leading-relaxed text-gray-700">
+            Laser Hair Removal is a cutting-edge solution for removing unwanted hair and achieving smooth, flawless skin.
+            By utilizing advanced laser technology, this treatment targets hair follicles directly, reducing future growth with precision and safety.
+          </p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md w-full max-w-3xl">
+          <h3 class="text-xl font-bold text-blue-500 mb-3">Why Choose Laser Hair Removal?</h3>
+          <ul class="list-disc ml-5 text-gray-700 leading-relaxed">
+            <li>Quick and efficient sessions that fit into your busy schedule</li>
+            <li>Customizable settings for different skin tones, textures, and hair types</li>
+            <li>Minimal discomfort with no downtime — resume activities immediately</li>
+            <li>Precision targeting ensures optimal results with every session</li>
+          </ul>
+        </div>
+        <a href="contact.html" 
+           class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition">
+          Book an Appointment
+        </a>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="container mx-auto px-4 py-8 space-y-6">
+      <h2 class="text-3xl font-bold text-center mb-6 text-blue-500">Benefits of Laser Hair Removal</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Precision and Accuracy</h3>
+          <p class="leading-relaxed">
+            Our lasers are designed to precisely target hair follicles without damaging the surrounding skin, making it safe and effective.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Long-Lasting Results</h3>
+          <p class="leading-relaxed">
+            Unlike waxing or shaving, laser treatments reduce hair growth over time, giving you lasting smoothness with minimal maintenance.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-3 text-blue-500">Minimal Discomfort</h3>
+          <p class="leading-relaxed">
+            Our advanced cooling systems ensure that the procedure is as comfortable as possible, with little to no downtime.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-black py-4 text-center">
+    <p>&copy; 2025 Impressions Med Spa & Laser. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
