@@ -4,7 +4,7 @@
   "description": "A spa website styled with Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+    "build:css": "npx tailwindcss -i ./docs/styles.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
